@@ -69,7 +69,7 @@ handleAddOption =(option) =>{
 
     render() {
         
-        const subtitle = 'Put your life int he hand of a computer';
+        const subtitle = 'Put your life in the hand of a computer';
         
       return (
         <div>
@@ -78,6 +78,7 @@ handleAddOption =(option) =>{
           <Action  hasOptions = {this.state.options.length > 0}
           handlePick = {this.handlePick}
           />
+          <div className="wiget">
           <Options options= {this.state.options}
           handleDeleteOptions= {this.handleDeleteOptions}
           handleDeleteOption = {this.handleDeleteOption}
@@ -85,6 +86,7 @@ handleAddOption =(option) =>{
           <AddOption 
           handleAddOption = {this.handleAddOption}
           />
+          </div>
           </div>
           <OptionModal 
           selectedOption = {this.state.selectedOption}
